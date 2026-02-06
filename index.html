@@ -9,8 +9,8 @@
     margin: 0;
     padding: 0;
     background: radial-gradient(circle at top, #24001a, #000);
-    overflow: hidden;
     font-family: 'Segoe UI', Arial, sans-serif;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -21,7 +21,7 @@
     color: #ff9acb;
     font-weight: 700;
     letter-spacing: 2px;
-    z-index: 10;
+    z-index: 20;
     text-shadow: 0 0 15px #ff4f9a;
   }
 
@@ -32,18 +32,17 @@
     text-align: center;
     color: #ffd6e8;
     font-size: 14px;
-    z-index: 10;
+    z-index: 20;
     opacity: 0.9;
   }
 
   /* 💌 Message Box */
   .message-box {
-    position: fixed;
-    top: 95px;
-    width: 100%;
+    position: relative;
+    margin-top: 110px;
     display: flex;
     justify-content: center;
-    z-index: 10;
+    z-index: 15;
     pointer-events: none;
   }
 
@@ -52,7 +51,7 @@
     background: rgba(255, 192, 203, 0.12);
     border: 1px solid rgba(255, 182, 193, 0.4);
     border-radius: 16px;
-    padding: 18px 22px;
+    padding: 20px 22px;
     color: #ffe6f0;
     text-align: center;
     font-size: 15px;
@@ -63,16 +62,13 @@
 
   /* 🖼️ Couple Image Frame */
   .photo-frame {
-    margin: 14px auto 0;
+    margin: 16px auto 0;
     width: 160px;
     height: 160px;
     border-radius: 50%;
     border: 3px solid #ff9acb;
     box-shadow: 0 0 20px #ff4f9a;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .photo-frame img {
@@ -86,14 +82,18 @@
     margin-top: 8px;
     font-size: 12px;
     color: #ffb6d9;
-    opacity: 0.8;
+    opacity: 0.85;
   }
 
   canvas {
-    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: auto;
   }
 </style>
 </head>
+
 <body>
 
 <h1>🌹 Happy Rose Day MY BOOBOO ❤️</h1>
@@ -106,15 +106,16 @@
     This rose reminds me of the day I met you —
     <b>23 October 2025</b> 💖<br><br>
 
-    💗💗 Not only will I always love you,
-    but I will continue to fall in love with you
-    every single day 💗💗 ✨<br><br>
+    💗 Not only will I always love you,<br>
+    but I will continue to fall in love with you<br>
+    every single day 💗✨<br><br>
 
     💗 I LUBHHH YOU MY BOOBOO 💗<br>
     💗 My Cutie Pie 💗<br>
-    💗 My Polar Bear 🐻‍❄️💗<br>
-      💗I LOVE YOU RISHITA MY FUTURE WIFE💗<br>
-      WE WILL ALWAYS BE TOGETHER AND FOREVER
+    💗 My Polar Bear 🐻‍❄️💗<br><br>
+
+    💗 I LOVE YOU RISHITA, MY FUTURE WIFE 💗<br>
+    We will always be together — forever ♾️💞
 
     <div class="photo-frame">
       <img src="photos/IMG20251023171851.jpg" alt="My Love">
@@ -243,4 +244,7 @@ animate();
 </script>
 
 </body>
+</html>
+
+
 </html>
